@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Page de Contact</title>
+
+<style>
+
+body{
+    font-family: lucida calligraphy;
+    background-color: #f4f6f9;
+    margin:0;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+main{
+    max-width:700px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+fieldset{
+    border:1px solid #ddd;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:6px;
+}
+
+legend{
+    font-weight:bold;
+    color:#003366;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button[type="submit"]{
+    background:#28a745;
+    color:white;
+}
+
+button[type="reset"]{
+    background:#dc3545;
+    color:white;
+    margin-left:10px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:#003366;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Contactez-nous</h1>
+    <p>Nous sommes disponibles pour répondre à vos questions</p>
+</header>
+
+<main>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            
+            <legend>Informations personnelles</legend>
+
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email">Adresse email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone">
+
+        </fieldset>
+
+
+        <fieldset>
+            
+            <legend>Sujet du message</legend>
+
+            <label for="sujet">Choisissez un sujet</label>
+            <select id="sujet" name="sujet" required>
+                <option value="">-- Sélectionnez --</option>
+                <option value="information">Demande d'information</option>
+                <option value="support">Support technique</option>
+                <option value="don">Demande de don</option>
+                <option value="autre">Autre</option>
+            </select>
+
+        </fieldset>
+
+
+        <fieldset>
+            
+            <legend>Votre message</legend>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+        </fieldset>
+
+
+        <fieldset>
+            
+            <legend>Envoyer</legend>
+
+            <button type="submit">Envoyer</button>
+            <button type="reset">Réinitialiser</button>
+
+        </fieldset>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>© 2026 MonSiteWeb - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
